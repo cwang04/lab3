@@ -20,12 +20,18 @@ public class ArrayTests {
   public void testReverseInPlaceBug() {
     int [] input = {1, 2, 3};
     ArrayExamples.reverseInPlace(input);
-    assertArrayEquals(new int[]{1, 2, 3}, input);
+    assertArrayEquals(new int[]{3, 2, 1}, input);
   }
 
   @Test
   public void testReversedBug() {
     int[] input = {1, 2, 3};
     assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input));
+  }
+
+  @Test
+  public void testAverageWithoutLowest() {
+    double[] input = {};
+    assertEquals(0.0, ArrayExamples.averageWithoutLowest(input), 0.001);
   }
 }
