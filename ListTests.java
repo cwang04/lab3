@@ -1,9 +1,6 @@
 import static org.junit.Assert.*;
 import java.util.ArrayList;
-
-import org.hamcrest.CoreMatchers;
 import org.junit.*;
-import static org.hamcrest.CoreMatchers.*;
 
 public class ListTests {
     class CheckLowerCase implements StringChecker{
